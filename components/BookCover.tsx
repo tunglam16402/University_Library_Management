@@ -15,7 +15,7 @@ const variantStyles: Record<BookCoverVariant, string> = {
 
 interface Probs {
   className: string;
-  variant: BookCoverVariant;
+  variant?: BookCoverVariant;
   coverColor: string;
   coverImage: string;
 }

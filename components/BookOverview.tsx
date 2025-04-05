@@ -40,7 +40,7 @@ const BookOverview = ({
           </div>
           <p className="book-secription">{description}</p>
         </div>
-        <Button className="book-overivew_btn">
+        <Button className="book-overview_btn">
           <Image
             src="/icons/book.svg"
             alt="book button"
@@ -62,8 +62,7 @@ const BookOverview = ({
             <BookCover
               variant="wide"
               coverColor={color}
-              coverImage={cover}
-            />
+              coverImage={cover} className={""}            />
           </div>
         </div>
       </div>
