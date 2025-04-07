@@ -143,7 +143,7 @@ export const FIELD_NAMES = {
   confirmPassword: "Confirm Password",
   universityCard: "Upload University ID Card",
 };
-
+//field type
 export const FIELD_TYPES = {
   fullName: "text",
   email: "email",
