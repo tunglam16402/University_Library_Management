@@ -99,7 +99,9 @@ const AuthForm = <T extends FieldValues>({
             />
           ))}
 
-          <Button type="submit">Submit</Button>
+          <Button type="submit" className="form-btn">
+            {isLogin ? "Login" : "Register"}
+          </Button>
         </form>
       </Form>
       <p className="text-center text-base font-medium">
