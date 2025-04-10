@@ -15,9 +15,10 @@
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@neondatabase/serverless": "^1.0.0",
+    "@radix-ui/react-avatar": "^1.1.4",
     "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.2",
-    "@radix-ui/react-toast": "^1.2.6",
+    "@radix-ui/react-toast": "^1.2.7",
     "auth": "^1.2.3",
     "bcryptjs": "^3.0.2",
     "class-variance-authority": "^0.7.1",
