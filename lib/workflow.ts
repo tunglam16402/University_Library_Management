@@ -29,7 +29,7 @@ export const sendEmail = async ({
       provider: resend({ token: config.env.resendToken }), // Sử dụng API Key của Resend
     },
     body: {
-      from: "Project Dev <onboarding@resend.dev>", // Email mặc định của Resend
+      from: "Project Dev university library <onboarding@resend.dev>", // Email mặc định của Resend
       to: [email], // Địa chỉ email nhận
       subject,
       html: message, // Nội dung HTML của email
