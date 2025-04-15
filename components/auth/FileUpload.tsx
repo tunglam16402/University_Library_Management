@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { IKImage, ImageKitProvider, IKUpload, IKVideo } from "imagekitio-next";
@@ -15,7 +16,7 @@ const {
 
 const authenticator = async () => {
   try {
-    const response = await fetch(`${config.env.apiEndpoint}/api/auth/imagekit`);
+    const response = await fetch(`${config.env.apiEndpoint}/api/imagekit`);
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -229,7 +230,7 @@ const FileUpload = ({
         </div>
       ) : type === "video" ? (
         <IKVideo
-          path={file.filePath}
+          path={file.filePath ?? undefined}
           controls={true}
           className="h-96 w-full rounded-xl"
         />
