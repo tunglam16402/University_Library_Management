@@ -19,13 +19,14 @@ import { Button } from "@/components/ui/button";
 import FileUpload from "@/components/auth/FileUpload";
 import ColorPicker from "../ColorPicker";
 import { createBook } from "@/lib/admin/actions/book";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { toast } from "@/hooks/use-toast";
 
 interface Props extends Partial<Book> {
   type?: "create" | "update";
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const BookForm = ({ type, ...book }: Props) => {
   const router = useRouter();
   const form = useForm<z.infer<typeof bookSchema>>({
